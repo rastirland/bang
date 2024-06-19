@@ -89,6 +89,16 @@ a:focus {
           box-shadow: none;
 }
 
+.myTable {
+  border-collapse: collapse; /* Ensures spacing applies within borders */
+  margin: 0 auto; /* Centers the table horizontally (optional) */
+}
+
+.myTable th, .myTable td {
+  padding: 10px; /* Adjust the padding value for desired spacing */
+}
+
+
 /*header section*/
 .hero_area {
   position: relative;
