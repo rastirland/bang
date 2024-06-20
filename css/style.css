@@ -140,6 +140,9 @@ a:focus {
     h2 {
       font-family: a; /* Example mobile font family */
     }
+    .navbar-brand span {
+      display: none;
+    }
   }
 }
 
@@ -178,6 +181,7 @@ a:focus {
 }
 
 .navbar-brand span {
+  font-family: a;
   font-weight: bold;
   font-size: 32px;
   color: #ffffff;
