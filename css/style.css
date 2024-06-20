@@ -120,11 +120,20 @@ a:focus {
   height: 100%;
 }
 
+
+
+
+
 .bg-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 768px) { /* Target mobile screens (adjust breakpoint as needed) */
+  .bg-box img {
+    height: 55%; /* Reset height to auto for mobile */
+  }
 }
 
 .sub_page .hero_area {
