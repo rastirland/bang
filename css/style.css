@@ -138,10 +138,16 @@ a:focus {
   .bg-box img {
     height: 55%; /* Reset height to auto for mobile */
     h2 {
-      font-family: a; /* Example mobile font family */
+      font-family: Avant-garde book bt; /* Example mobile font family */
     }
-     
-  }
+  
+   
+  } 
+    .mobile-text {
+      text-align: center;
+      color: #c09256;
+      font-family: Avant-garde book bt; 
+    }
   .slider_section .detail-box h2 {
     display: none;
     }
@@ -181,7 +187,7 @@ a:focus {
 }
 
 .navbar-brand {
-  font-family: 'a', cursive;
+  font-family: 'Avant-garde', cursive;
 }
 
 .navbar-brand span {
