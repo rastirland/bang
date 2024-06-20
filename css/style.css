@@ -121,7 +121,11 @@ a:focus {
 }
 
 
-
+@media (max-width: 768px) { /* Target mobile screens (adjust breakpoint as needed) */
+  h2 {
+    font-family: Verdana, sans-serif; /* Example mobile font family */
+  }
+}
 
 
 .bg-box img {
@@ -133,6 +137,9 @@ a:focus {
 @media (max-width: 768px) { /* Target mobile screens (adjust breakpoint as needed) */
   .bg-box img {
     height: 55%; /* Reset height to auto for mobile */
+    h2 {
+      font-family: a; /* Example mobile font family */
+    }
   }
 }
 
