@@ -140,11 +140,14 @@ a:focus {
     h2 {
       font-family: a; /* Example mobile font family */
     }
-    .navbar-brand span {
-      display: none;
-    }
+     
   }
-}
+  .slider_section .detail-box h2 {
+    display: none;
+    }
+  
+  
+
 
 .sub_page .hero_area {
   min-height: auto;
