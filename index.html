@@ -46,7 +46,7 @@
           <a class="navbar-brand" href="index.html">
             <p>
             <span>
-              B & G CarSales LTD
+              B & G Car Sales LTD
             </span>
           </a>
 
@@ -62,16 +62,41 @@
             
             </ul>
             <div class="user_option">
-        
               <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="https://www.ebay.co.uk/sch/i.html?item=196440441403&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=bgcarsales" class="order_online" target="_blank">
+            
+              <a href="#" class="order_online sell-your-car" onclick="openForm()">Sell Your Car</a>  <a href="https://www.ebay.co.uk/sch/i.html?item=196440441403&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=bgcarsales" class="order_online" target="_blank">
                 eBay Store
               </a>
             </div>
+            
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Sell Your Car</h1>  <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="carDetails">Car Details (Year, Make, Model, Mileage, etc.):</label>
+                <textarea id="carDetails" name="carDetails" rows="5" required></textarea><br>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+            
+            <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
           </div>
         </nav>
       </div>
@@ -278,6 +303,7 @@
         <li data-filter=".renault">RENAULT</li>
         <li data-filter=".vauxhall">VAUXHALL</li>
         <li data-filter=".volkswagon">VOLKSWAGON</li>
+        <li data-filter=".sold">SOLD</li>
 
       </ul>
 
@@ -371,15 +397,15 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all vauxhall">
+          <div class="col-sm-6 col-lg-4 all sold">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/b2014.jpg" alt="">
+                  <img src="images/b2014sold.jpg" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    2014 BLACK Vauxhall Astra
+                    2014 Vauxhall Astra (SOLD)
                   </h5>
                   <p>
                     <table class="myTable">
@@ -483,7 +509,7 @@
                         <td>Volkswagon</td>
                         <td>118,031</td>
                         <td>Diesel 2.0 TDi</td>
-                        <td>2014</td>
+                        <td>2011</td>
                       </tr>
                     </table>
                   </p>
