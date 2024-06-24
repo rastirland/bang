@@ -69,17 +69,6 @@ $(".client_owl-carousel").owlCarousel({
     }
 });
 
-const submitButton = document.getElementById('submitButton');
-submitButton.addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent default form submission
-
-  // Submit the form data using SB Forms API (refer to SB Forms documentation)
-  // ... your code to submit the form data ...
-
-  // Display custom success message (optional)
-  const successMessage = document.getElementById('submitSuccessMessage');
-  successMessage.classList.remove('d-none'); // Make success message visible
-});
 
 // function openForm() {
 //     document.getElementById("myForm").style.display = "block";
