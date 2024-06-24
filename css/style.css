@@ -148,16 +148,16 @@ a:focus {
   background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
-  border: none;
+  border:#c09256;
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
+/* Add a gold background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: #c09256;
 }
 
 /* Add some hover effects to buttons */
