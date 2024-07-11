@@ -68,47 +68,14 @@
                 </button>
               </form>
             
-              <a href="#" class="order_online sell-your-car" onclick="toggleForm()">Sell Your Car</a>
+              <a href="sellcar.html" class="order_online" target="_blank">
+                Sell Your Car
+              </a>
               <a href="https://www.ebay.co.uk/sch/i.html?item=196440441403&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=bgcarsales" class="order_online" target="_blank">
                 eBay Store
               </a>
-            </div>
+              
             
-            <div class="form-popup" id="myForm">
-              <form action="/action_page.php" class="form-container">
-                <h1>Sell Your Car</h1>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br>
-                <label for="carDetails">Car Details (Year, Make, Model, Mileage, etc.):</label>
-                <textarea id="carDetails" name="carDetails" rows="5" required></textarea><br>
-                <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-              </form>
-            </div>
-            
-            <script>
-            function openForm() {
-              document.getElementById("myForm").style.display = "block";
-            }
-            
-            function closeForm() {
-              document.getElementById("myForm").style.display = "none";
-            }
-            
-            // Function to toggle the display of the form
-            function toggleForm() {
-              const form = document.getElementById("myForm");
-              if (form.style.display === "block") {
-                closeForm();
-              } else {
-                openForm();
-              }
-            }
-            </script>
             
           </div>
         </nav>
@@ -135,6 +102,7 @@
                         eBay Store
                       </a>
                     </div>
+                    
                   </div>
                 </div>
               </div>
