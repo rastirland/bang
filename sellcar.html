@@ -126,14 +126,22 @@
     <div class="container px-5 my-5">
       <form id="contactForm" data-sb-form-api-token="API_TOKEN">
         <div class="form-floating mb-3">
-          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-          <label for="emailAddress">Email Address</label>
+          <input class="form-control" id="name" type="text" placeholder="Name" style="color: white;" required />
+          <label for="name" style="color: white;">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input class="form-control" id="phoneNumber" type="tel" placeholder="Phone Number" style="color: white;" required />
+          <label for="phoneNumber" style="color: white;">Phone Number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" style="color: white;" />
+          <label for="emailAddress" style="color: white;">Email Address</label>
           <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
           <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
         </div>
         <div class="form-floating mb-3">
-          <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-          <label for="message">Information</label>
+          <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required" style="color: white;"></textarea>
+          <label for="message" style="color: white;">Message</label>
           <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
         </div>
         <div class="d-none" id="submitSuccessMessage">
